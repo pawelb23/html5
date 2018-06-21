@@ -1,3 +1,68 @@
 body {
   background-color: #632763;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+div.ikona {
+    position: absolute;
+    display: flex;
+    width: 200px;
+    height: 100px;
+    font-size: 50px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 70px solid;
+	border-right: 70px solid;
+	border-bottom: 100px solid #F34A53;
+/*    border-top: 100px solid #F34A53;*/
+	margin: 100px auto 0;
+    border-radius: 5px 5px 5px 5px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.triangle {
+    margin: 0 auto 0;
+    margin-top: 91vh;
+/*    transform: translateY(-50%);*/
+	position: relative;
+	background-color: orange;
+/*	text-align: left;*/
+    color: black;
+/*    font-size: 25px;*/
+}
+.triangle:before,
+.triangle:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+.triangle,
+.triangle:before,
+.triangle:after {
+	width:  35px;
+	height: 35px;
+	border-top-right-radius: 30%;
+}
+
+.triangle {
+	transform: rotate(-60deg) skewX(-30deg) scale(1,.866);
+}
+.triangle:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+.triangle:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
 }
